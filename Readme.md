@@ -2,7 +2,7 @@
 
 * Студент: [Екатерина Набатова](https://up.htmlacademy.ru/htmlcss/39/user/2400335).
 * Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
-
+* Сайт: [Мой проект Седона](https://koheri66.github.io/2400335-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
