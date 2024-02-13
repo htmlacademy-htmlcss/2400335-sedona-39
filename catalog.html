@@ -2,14 +2,17 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8">
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
   </head>
 
   <body>
     <header class="page-header">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" src="images/logo-sedona.svg" width="138" height="64" alt="Логотип Седона">
+      </a>
       <nav>
-        <a class="navigation-logo" href="index.html"><img class="page-header-logo" scr="#" alt="Логотип Седона"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
@@ -23,30 +26,30 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="navigation-link" href="#"><img src="images/search.svg" width="44" height="64" alt="Поиск"></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span><span>12</span></a>
+            <a class="navigation-link" href="#"><img src="images/heart.svg" width="44" height="64" alt="Избранное"><span>12</span></a>
           </li>
         </ul>
-        <button class="button-navigation" href="#" type="submit">Хочу сюда!</button>
+        <button class="button-navigation" type="submit">Хочу сюда!</button>
       </nav>
     </header>
     <main class="mail-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrums">
-          <li class="breadcrums-item">
-            <a class="breadcrums-link" href="index.html"><img scr="#" alt="Иконка Домой"></a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"><img src="images/home.svg" width="12" height="12" alt="Иконка Домой"></a>
           </li>
-          <li class="breadcrums-item">
-            <a class="breadcrums-link">Гостиницы</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ol>
       </header>
       <section class="catalog-hotel">
         <h2 class="visually-hidden">Выбор жилья с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -69,7 +72,7 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing" checked>Гостиницы</label>
+                  <input class="control-input" type="radio" name="housing" value="hotel" checked>Гостиницы</label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
@@ -102,33 +105,37 @@
         <button class="button-reset" type="reset">Сбросить</button>
       </section>
       <section class="catalog-result">
-        <h2>Найдено гостиниц: <span>38</span></h2>
+        <h2>Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
-        </select>
-        <a class="button button-light" href="#"><span class="visually-hidden">Показать карточки</span></a>
-        <a class="button" href="#"><span class="visually-hidden">Показать слайдер</span></a>
-        <a class="button" href="#"><span class="visually-hidden">Показать список</span></a>
-      </section>
+        <ul class="catalog-hotels-button">
+          <li class="catalog-hotels-item">
+            <img src="images/view=table.svg" width="16" height="14" alt="Карточки"></li>
+            <li class="catalog-hotels-item">
+              <img src="images/view=slideshow.svg" width="16" height="14" alt="Слайдер"></li>
+              <li class="catalog-hotels-item">
+                <img src="images/view=list.svg" width="16" height="14" alt="Список"></li>
+        </ul>
+      </select>
       <section>
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="#" alt="Amara Resort & Spa">
+              <img class="hotel-card-image" src="images/amara-resort&spa.jpg" width="300" height="212" alt="Amara Resort & Spa">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <span>Гостиница</span>
             <span>от 4000 ₽</span>
             <a class="button-hotel-card" href="#">Подробнее</a>
-            <a class="button-hotel-card-like" href="#">В избранное</a>
+            <button class="button-hotel-card-like">В избранное</button>
             <span class="visually-hidden">Количество звезд</span>
             <p>Рейтинг: 8,5</p>
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="#" alt="Villas at Poco Diablo">
+              <img class="hotel-card-image" src="images/villas-at-poco-diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
             <span>Гостиница</span>
@@ -140,7 +147,7 @@
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="#" alt="Desert Quail Inn">
+              <img class="hotel-card-image" src="images/desert-quail-inn.jpg" width="300" height="212" alt="Desert Quail Inn">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
             <span>Гостиница</span>
@@ -152,7 +159,7 @@
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="#" alt="GreenTree Inn">
+              <img class="hotel-card-image" src="images/greentree-inn.jpg" width="300" height="212" alt="GreenTree Inn">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
             <span>Гостиница</span>
@@ -198,18 +205,18 @@
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-link" href="https://vk.com/htmlacademy"><img scr="" alt="Логотип ВК"></a>
+          <a class="social-link" href="https://vk.com/htmlacademy"><img src="images/social-vk.svg" width="47" height="40" alt="vk"></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://t.me/htmlacademy"><img scr="" alt="Логотип Телеграм"></a>
+          <a class="social-link" href="https://t.me/htmlacademy"><img src="images/social-telegram.svg" width="47" height="40" alt="telegram"></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru"><img scr="" alt="Логотип Ютуб"></a>
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru"><img src="images/social-youtube.svg" width="47" height="40" alt="youtube"></a>
         </li>
       </ul>
       <a class="contact-phone" href="88128121212">+7 (812) 812-12-12</a>
-      <a class="footer-logo-link" href="https://htmlacademy.ru/"><img class="footer-logo-htmlacademy" scr=""
-          alt="Логотип Академии">
+      <a class="footer-logo-link" href="https://htmlacademy.ru/"><img class="footer-logo-htmlacademy" src="images/logo_htmlacademy.svg" width="115" height="33"
+          alt="Логотип Академии"></a>
     </footer>
   </body>
 
