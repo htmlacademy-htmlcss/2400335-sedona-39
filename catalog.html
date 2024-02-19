@@ -5,8 +5,8 @@
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
@@ -15,7 +15,7 @@
       <nav>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -36,7 +36,7 @@
       </nav>
     </header>
     <main class="mail-inner">
-      <header class="inner-header">
+      <div class="filter"><header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrums">
           <li class="breadcrumbs-item">
@@ -103,7 +103,7 @@
         </form>
         <button class="button-active" type="submit">Применить</button>
         <button class="button-reset" type="reset">Сбросить</button>
-      </section>
+      </section></div>
       <section class="catalog-result">
         <h2>Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
@@ -125,48 +125,48 @@
               <img class="hotel-card-image" src="images/amara-resort&spa.jpg" width="300" height="212" alt="Amara Resort & Spa">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
-            <span>Гостиница</span>
-            <span>от 4000 ₽</span>
-            <a class="button-hotel-card" href="#">Подробнее</a>
+            <span class="hotel-card-text">Гостиница</span>
+            <span class="hotel-card-text">от 4000 ₽</span>
+            <button class="button-hotel-card" href="#">Подробнее</button>
             <button class="button-hotel-card-like">В избранное</button>
             <span class="visually-hidden">Количество звезд</span>
-            <p>Рейтинг: 8,5</p>
+            <p class="hotel-card-rating">Рейтинг: 8,5</p>
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="images/villas-at-poco-diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
-            <span>Гостиница</span>
-            <span>от 5000 ₽</span>
-            <a class="button-hotel-card" href="#">Подробнее</a>
-            <a class="button-hotel-card-like" href="#">В избранное</a>
+            <span class="hotel-card-text">Гостиница</span>
+            <span class="hotel-card-text">от 5000 ₽</span>
+            <button class="button-hotel-card" href="#">Подробнее</button>
+            <button class="button-hotel-card-like">В избранное</button>
             <span class="visually-hidden">Количество звезд</span>
-            <p>Рейтинг: 9,2</p>
+            <p class="hotel-card-rating">Рейтинг: 9,2</p>
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="images/desert-quail-inn.jpg" width="300" height="212" alt="Desert Quail Inn">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
-            <span>Гостиница</span>
-            <span>от 2500 ₽</span>
-            <a class="button-hotel-card" href="#">Подробнее</a>
-            <a class="button-hotel-card-like" href="#">В избранное</a>
+            <span class="hotel-card-text">Гостиница</span>
+            <span class="hotel-card-text">от 2500 ₽</span>
+            <button class="button-hotel-card" href="#">Подробнее</button>
+            <button class="button-hotel-card-like">В избранное</button>
             <span class="visually-hidden">Количество звезд</span>
-            <p>Рейтинг: 6,9</p>
+            <p class="hotel-card-rating">Рейтинг: 6,9</p>
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="images/greentree-inn.jpg" width="300" height="212" alt="GreenTree Inn">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
-            <span>Гостиница</span>
-            <span>от 1500 ₽</span>
-            <a class="button-hotel-card" href="#">Подробнее</a>
-            <a class="button-hotel-card-like" href="#">В избранное</a>
+            <span class="hotel-card-text">Гостиница</span>
+            <span class="hotel-card-text">от 1500 ₽</span>
+            <button class="button-hotel-card" href="#">Подробнее</button>
+            <button class="button-hotel-card-like">В избранное</button>
             <span class="visually-hidden">Количество звезд</span>
-            <p>Рейтинг: 5,0</p>
+            <p class="hotel-card-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
         <ol class="pagination">
@@ -190,7 +190,7 @@
           </li>
         </ol>
       </section>
-      <section class="appointment">
+      <section class="appointment-inner">
         <h2 class="visually-hidden">Заявка на гостиницу</h2>
         <b>Подпишитесь на рассылку</b>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -213,7 +213,8 @@
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru"><img src="images/social-youtube.svg" width="47" height="40" alt="youtube"></a>
         </li>
       </ul>
-      <a class="contact-phone" href="88128121212">+7 (812) 812-12-12</a>
+      <a class="contact-phone" href="88128121212"><img class="phone-logo-htmlacademy" src="images/phone.svg" width="331" height="40"
+        alt="Телефон Академии"></a>
       <a class="footer-logo-link" href="https://htmlacademy.ru/"><img class="footer-logo-htmlacademy" src="images/logo_htmlacademy.svg" width="115" height="33"
           alt="Логотип Академии"></a>
     </footer>
