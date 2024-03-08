@@ -49,7 +49,7 @@ body {
 
 .page-header {
   display: flex;
-  height: 64px;
+  min-height: 64px;
   padding: 0 70px;
 }
 
@@ -143,7 +143,11 @@ body {
   margin-bottom: 64px;
 }
 
-.advantages-header, .services-header, .hotel-header, .appointment-header, .appointment-inner-header  {
+.advantages-header,
+.services-header,
+.hotel-header,
+.appointment-header,
+.appointment-inner-header  {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -152,7 +156,11 @@ body {
   margin: 0 auto;
 }
 
-.advantages-text, .services-text, .hotel-text, .appointment-text, .appointment-inner-text {
+.advantages-text,
+.services-text,
+.hotel-text,
+.appointment-text,
+.appointment-inner-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -192,7 +200,8 @@ body {
   background-color: rgba(130, 179, 211, 0.12);
 }
 
-.advantages-title, .services-title {
+.advantages-title,
+.services-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -325,8 +334,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 96px;
-  padding-left: 258px;
-  padding-right: 258px;
   padding-bottom: 104px;
   color: #ffffff;
   background-image: url("../images/index/subscribe.jpg");
@@ -611,7 +618,8 @@ margin-bottom: 16px;
 }
 
 
-.button-hotel-card, .button-hotel-card-like {
+.button-hotel-card,
+.button-hotel-card-like {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
