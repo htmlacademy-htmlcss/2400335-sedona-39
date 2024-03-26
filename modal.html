@@ -197,6 +197,81 @@
       </svg>
     </a>
   </footer>
+  <!--Модальное окно-->
+  <div class="modal-container" data-test="modal">
+    <div class="modal modal-auth">
+      <button class="modal-close-button" type="button" aria-label="Закрыть модальное окно поиска гостиниц.">
+        <span class="visually-hidden">Закрыть</span>
+        <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg" aria-label="Закрыть модальное окно поиска гостиниц.">
+          <path
+            d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+            fill="currentColor" />
+        </svg>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиниц в Седоне
+        </h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal-form-search">
+            <label class="modal-form-check-in" for="check-in">Дата заезда:</label>
+            <input class="modal-form-input-check-in" type="data" id="check-in" name="check-in" value="27 апреля 2020"
+              aria-label="Укажите дату.">
+            <span class="modal-form-text-check-in">Мы не можем отправить вас в прошлое.</span>
+
+            <label class="modal-form-check-out" for="check-out">Дата выезда:</label>
+            <input class="modal-form-input-check-out" type="data" id="check-out" name="check-out"
+              value="01 сентября 2024" aria-label="Укажите дату.">
+            <span class="modal-form-text-check-out">На эти даты есть свободные номера.</span>
+
+            <label class="modal-form-adults" for="adults">Взрослые:</label>
+            <div class="adults-container">
+              <button class="button-control" type="button" aria-label="Уменьшить количество.">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" viewBox="0 0 20 20" role="img" aria-label="Уменьшить количество.">
+                  <path fill="currentColor" d="M3 9v2h14V9H3Z" />
+                </svg>
+              </button>
+              <input class="modal-control-input" type="number" name="adults" id="adults" value="2"
+                aria-label="Укажите количество.">
+              <button class="button-control" type="button" aria-label="Увеличить количество.">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" viewBox="0 0 20 20" role="img" aria-label="Увеличить количество.">
+                  <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                </svg>
+              </button>
+            </div>
+
+            <label class="modal-form-children" for="children">Дети:
+              <span class="tooltip" tabindex="0">i
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами,
+                  возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+              </span>
+            </label>
+
+            <div class="children-container">
+              <button class="button-control" type="button" aria-label="Уменьшить количество.">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" viewBox="0 0 20 20" role="img" aria-label="Уменьшить количество.">
+                  <path fill="currentColor" d="M3 9v2h14V9H3Z" />
+                </svg>
+              </button>
+              <input class="modal-control-input" type="number" name="children" id="children" value="2"
+                aria-label="Укажите количество взрослых.">
+              <button class="button-control" type="button" aria-label="Увеличить количество.">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" viewBox="0 0 20 20" role="img" aria-label="Увеличить количество.">
+                  <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                </svg>
+              </button>
+            </div>
+          </fieldset>
+          <button class="button-search" type="submit" aria-label="Выполнить поиск гостиниц">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
