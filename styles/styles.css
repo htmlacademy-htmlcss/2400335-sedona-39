@@ -603,7 +603,7 @@ body {
   margin: 0 0 8px;
 }
 
-/*Фильтр*/
+/*Хлебные крошки*/
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
@@ -749,14 +749,14 @@ body {
 
 .range-price-control::before {
   position: absolute;
-  right: 20px;
-  top: 50%;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: inherit;
   width: 18px;
   height: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
+  top: 50%;
+  right: 20px;
   color: rgba(0, 0, 0, 0.3);
   transform: translateY(-50%);
 }
@@ -770,14 +770,15 @@ body {
 }
 
 .range-price-input {
-  width: 143px;
-  padding: 12px 43px 12px 20px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   font-size: 18px;
-  font-weight: 700;
   line-height: 24px;
+  font-weight: 700;
+  font-family: inherit;
   color: #000000;
+  width: 143px;
+  padding: 12px 43px 12px 20px;
   border: none;
   outline: none;
   appearance: none;
@@ -924,7 +925,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   color: #333333;
   text-align: left;
   background-image: url("../images/icons/arrow-down.svg");
