@@ -242,7 +242,7 @@ body {
 .welcome {
   color: #ffffff;
   background-color: #83b3d3;
-  background-image: url("../images/index/Vector.svg"), url("../images/index/index-background.jpg");
+  background-image: url("../images/index/decor.svg"), url("../images/index/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, center center;
   background-size: 100% auto, cover;
