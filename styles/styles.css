@@ -338,7 +338,7 @@ body {
 
 .advantages-title{
   color: #000000;
-  width: 175px;
+  width: 174px;
 }
 
 .advantages-title::after,
@@ -437,7 +437,7 @@ body {
 .hotel {
   display: flex;
   flex-direction: column;
-  padding: 96px 304px;
+  padding: 97px 304px;
   text-align: center;
 }
 
@@ -477,7 +477,7 @@ body {
 }
 
 .appointment-text {
-  margin: 0 0 54px;
+  margin: 0 0 55px;
   padding: 0 104px;
 }
 
